@@ -1,5 +1,6 @@
 using System;
 using System.Web;
+using AlloyDemo.Features.RegisterPersonas;
 using EPiServer.Cms.UI.AspNetIdentity;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -16,6 +17,8 @@ namespace AlloyDemo
 
         public void Configuration(IAppBuilder app)
         {
+            // Automating group management, A2 (page 22)
+            app.UseRegisterPersonas(() => HttpContext.Current.Request.IsLocal);
 
             // Add CMS integration for ASP.NET Identity
             app.AddCmsAspNetIdentity<ApplicationUser>();
