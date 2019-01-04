@@ -345,6 +345,8 @@
     <Compile Include="Controllers\SearchPageController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Controllers\VideoFileController.cs" />
+    <Compile Include="Features\RegisterPersonas\RegisterPersonas.cs" />
+    <Compile Include="Features\RegisterPersonas\RegisterPersonasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -403,6 +405,7 @@
     <Content Include="ClientResources\Styles\LayoutIcons.css" />
     <Content Include="ClientResources\Styles\Styles.css" />
     <Content Include="favicon.ico" />
+    <Content Include="Features\RegisterPersonas\Startup.cs-changes.txt" />
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="modules\_protected\EPiServer.Marketing.Testing\abcapture\capture.js" />
     <Content Include="modules\_protected\EPiServer.Marketing.Testing\abcapture\phantomjs.exe" />
@@ -473,6 +476,8 @@
     <Content Include="modules\_protected\EPiServer.Forms\Forms.config" />
     <Content Include="modules\_protected\EPiServer.Forms\EPiServer.Forms.zip" />
     <Content Include="modules\_protected\EPiServer.Marketing.Testing\EPiServer.Marketing.Testing.zip" />
+    <Content Include="Features\RegisterPersonas\RegisterPersonas.cshtml" />
+    <Content Include="Features\Web.config" />
     <None Include="packages.config" />
     <Content Include="Views\SearchPage\Index.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />
