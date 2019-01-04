@@ -57,6 +57,6 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
-*.mdf filter=lfs diff=lfs merge=lfs -binary
-*.ldf filter=lfs diff=lfs merge=lfs -binary
-*.dat filter=lfs diff=lfs merge=lfs -binary
+*.mdf filter=lfs diff=lfs merge=lfs -text
+*.ldf filter=lfs diff=lfs merge=lfs -text
+*.dat filter=lfs diff=lfs merge=lfs -text
