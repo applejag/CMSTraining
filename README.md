@@ -11,7 +11,7 @@ I am doing this on a repository because I have to move between computers, and wa
 > `admin`: `C-p5WUZ2DvSNAs!`  
 > _the rest_: _same as in the book. for the most part `Pa$$w0rd`_~~
 >
-> > This got reset in e5f7537b59805f167f0893d094ac820eb571a0cc,
+> > This got reset in [e5f7537](https://github.com/jilleJr/CMSTraining/commit/e5f7537b59805f167f0893d094ac820eb571a0cc),
 > > as now __all__ accounts use `Pa$$w0rd`
 
 Get schooled
