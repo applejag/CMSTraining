@@ -1,6 +1,7 @@
 using System;
 using System.Web;
 using AlloyDemo.Features.RegisterPersonas;
+using AlloyDemo.Features.ResetAdmin;
 using EPiServer.Cms.UI.AspNetIdentity;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -19,6 +20,9 @@ namespace AlloyDemo
         {
             // Automating group management, A2 (page 22)
             //app.UseRegisterPersonas(() => HttpContext.Current.Request.IsLocal);
+
+            // Reset admin account feature, A6 (page 49)
+            app.UseResetAdmin(() => HttpContext.Current.Request.IsLocal);
 
             // Add CMS integration for ASP.NET Identity
             app.AddCmsAspNetIdentity<ApplicationUser>();
