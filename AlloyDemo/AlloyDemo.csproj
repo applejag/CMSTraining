@@ -487,6 +487,7 @@
     <Content Include="Resources\LanguageFiles\GroupNames.xml" />
     <Content Include="Resources\LanguageFiles\PropertyNames-sv.xml" />
     <Content Include="Resources\LanguageFiles\PropertyNames.xml" />
+    <Content Include="Resources\LanguageFiles\Views-sv.xml" />
     <Content Include="Resources\LanguageFiles\Views.xml" />
     <Content Include="Resources\LanguageFiles\_ReadMe.txt" />
     <Content Include="Static\css\bootstrap-collapse.js" />

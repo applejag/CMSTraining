@@ -3,6 +3,10 @@
 
   <language name="English" id="en">
 
+    <productpage>
+      <changed>Changed:</changed>
+    </productpage>
+
     <contact>
       <email>E-mail</email>
       <phone>Phone</phone>
