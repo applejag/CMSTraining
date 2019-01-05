@@ -22,7 +22,7 @@ namespace AlloyDemo
             //app.UseRegisterPersonas(() => HttpContext.Current.Request.IsLocal);
 
             // Reset admin account feature, A6 (page 49)
-            app.UseResetAdmin(() => HttpContext.Current.Request.IsLocal);
+            //app.UseResetAdmin(() => HttpContext.Current.Request.IsLocal);
 
             // Add CMS integration for ASP.NET Identity
             app.AddCmsAspNetIdentity<ApplicationUser>();
