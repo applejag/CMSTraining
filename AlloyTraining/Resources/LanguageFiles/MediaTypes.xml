@@ -16,6 +16,10 @@
           </description>
         </properties>
       </imagefile>
+      <svgfile>
+        <name>SVG file</name>
+        <description>Use this to upload Scalable Vector Graphic(SVG) images.</description>
+      </svgfile>
     </contenttypes>
   </language>
   <language name="Svenska" id="sv">
@@ -34,6 +38,10 @@
           </description>
         </properties>
       </imagefile>
+      <svgfile>
+        <name>SVG fil</name>
+        <description>Använd denna flr att ladda upp en Scalable Vector Graphic (SVG) bild.</description>
+      </svgfile>
     </contenttypes>
   </language>
 </languages>
