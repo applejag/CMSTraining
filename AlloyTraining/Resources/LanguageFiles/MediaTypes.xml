@@ -6,6 +6,16 @@
         <name>Any file</name>
         <description>Use this to upload any type of file.</description>
       </anyfile>
+      <imagefile>
+        <name>Image file</name>
+        <description>Use this to upload image files.</description>
+        <properties>
+          <description>
+            <caption>Description</caption>
+            <help>A description of the image, to be viewed together with the image.</help>
+          </description>
+        </properties>
+      </imagefile>
     </contenttypes>
   </language>
   <language name="Svenska" id="sv">
@@ -14,6 +24,16 @@
         <name>Vilken filtyp som helst</name>
         <description>Använd denna för att ladda upp en fil av valfri filtyp.</description>
       </anyfile>
+      <imagefile>
+        <name>Bild fil</name>
+        <description>Använd denna för att ladda upp bild filer.</description>
+        <properties>
+          <description>
+            <caption>Beskrivning</caption>
+            <help>En detaljerad beskrivning av bilden, för att sedan visas tillsammans med bilden.</help>
+          </description>
+        </properties>
+      </imagefile>
     </contenttypes>
   </language>
 </languages>
