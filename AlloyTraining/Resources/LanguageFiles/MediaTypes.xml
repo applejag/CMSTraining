@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="English" id="en">
+    <contenttypes>
+      <anyfile>
+        <name>Any file</name>
+        <description>Use this to upload any type of file.</description>
+      </anyfile>
+    </contenttypes>
+  </language>
+  <language name="Svenska" id="sv">
+    <contenttypes>
+      <anyfile>
+        <name>Vilken filtyp som helst</name>
+        <description>Använd denna för att ladda upp en fil av valfri filtyp.</description>
+      </anyfile>
+    </contenttypes>
+  </language>
+</languages>
