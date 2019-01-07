@@ -256,6 +256,10 @@
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\EPiServerDB_0705f053.mdf" />
+    <Content Include="App_Data\EPiServerDB_0705f053_log.ldf">
+      <DependentUpon>EPiServerDB_0705f053.mdf</DependentUpon>
+    </Content>
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Views\Web.config" />
