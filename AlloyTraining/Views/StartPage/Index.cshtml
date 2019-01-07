@@ -1,0 +1,7 @@
+﻿@model AlloyTraining.Models.Pages.StartPage
+
+<h1 @Html.EditAttributes(m => m.Heading)>
+    @(Model.Heading ?? Model.Name)
+</h1>
+
+@Html.PropertyFor(m => m.MainBody)
