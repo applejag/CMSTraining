@@ -253,14 +253,18 @@
     <Compile Include="Models\Media\AnyFile.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\SvgFile.cs" />
+    <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
+    <Compile Include="Models\ViewModels\IPageViewModel.cs" />
+    <Compile Include="Models\ViewModels\PageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteContentIcons.cs" />
     <Compile Include="SiteGroupNames.cs" />
+    <Compile Include="SiteTabNames.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Blocks\" />
     <Folder Include="Models\Properties\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\EPiServerDB_0705f053.mdf" />
@@ -271,6 +275,13 @@
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Resources\LanguageFiles\MediaTypes.xml" />
     <Content Include="Resources\LanguageFiles\ContentTypes.xml" />
+    <Content Include="Static\contenticons\epi-edu-icon-block.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-commerce.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-container.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-page.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-search.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon-start.jpg" />
+    <Content Include="Static\contenticons\epi-edu-icon.jpg" />
     <Content Include="Static\css\bootstrap-collapse.js" />
     <Content Include="Static\css\bootstrap-responsive.css" />
     <Content Include="Static\css\bootstrap.css" />
@@ -322,6 +333,7 @@
     <Content Include="modules\_protected\CMS\CMS.zip" />
     <None Include="packages.config" />
     <Content Include="Views\StartPage\Index.cshtml" />
+    <Content Include="Views\Shared\Layouts\_Root.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
