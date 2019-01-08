@@ -1,5 +1,5 @@
 ﻿@using AlloyTraining.Models.ViewModels
-@model PageViewModel<AlloyTraining.Models.Pages.StartPage>
+@model IPageViewModel<AlloyTraining.Models.Pages.StartPage>
 
 <h1 @Html.EditAttributes(m => m.CurrentPage.Heading)>
     @(Model.CurrentPage.Heading ?? Model.CurrentPage.Name)
