@@ -27,5 +27,11 @@ namespace AlloyTraining.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 20)]
         public virtual XhtmlString MainBody { get; set; }
+
+        [CultureSpecific]
+        [Display(Name = "Footer text",
+            Description = "The footer text will be shown at the bottom of every page.",
+            GroupName = SiteTabNames.SiteSettings, Order = 10)]
+        public virtual string FooterText { get; set; }
     }
 }
