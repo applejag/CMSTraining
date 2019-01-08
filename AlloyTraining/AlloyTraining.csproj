@@ -341,6 +341,7 @@
     <Content Include="Views\StartPage\Index.cshtml" />
     <Content Include="Views\Shared\Layouts\_Root.cshtml" />
     <Content Include="Views\Shared\Layouts\_LeftNavigation.cshtml" />
+    <Content Include="Views\StandardPage\Index.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
