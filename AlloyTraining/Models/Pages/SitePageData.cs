@@ -13,25 +13,25 @@ namespace AlloyTraining.Models.Pages
             Order = 100)]
         [StringLength(60, MinimumLength = 5)]
         [CultureSpecific]
-        public string MetaTitle { get; set; }
+        public virtual string MetaTitle { get; set; }
 
         [Display(Name = "Meta keywords",
             GroupName = SiteTabNames.SEO,
             Order = 200)]
         [CultureSpecific]
-        public string MetaKeywords { get; set; }
+        public virtual string MetaKeywords { get; set; }
 
         [Display(Name = "Meta description",
             GroupName = SiteTabNames.SEO,
             Order = 300)]
         [CultureSpecific]
         [UIHint(UIHint.Textarea)]
-        public string MetaDescription { get; set; }
+        public virtual string MetaDescription { get; set; }
 
         [Display(Name = "Page thumbnail image",
             GroupName = SystemTabNames.Content,
             Order = 100)]
         [UIHint(UIHint.Image)]
-        public ContentReference PageImage { get; set; }
+        public virtual ContentReference PageImage { get; set; }
     }
 }
