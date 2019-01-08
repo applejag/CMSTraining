@@ -10,7 +10,7 @@ namespace AlloyTraining.Models.Pages
         GUID = "0b3b2063-1cbd-4fd5-bd52-7dc3eed4371c",
         Description = "The home page for a website with an area for blocks and partial pages.")]
     [SitePageIcon]
-    public class StartPage : PageData
+    public class StartPage : SitePageData
     {
         [CultureSpecific]
         [Display(

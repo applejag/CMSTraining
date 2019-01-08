@@ -1,7 +1,8 @@
-﻿@model AlloyTraining.Models.Pages.StartPage
+﻿@using AlloyTraining.Models.ViewModels
+@model PageViewModel<AlloyTraining.Models.Pages.StartPage>
 
-<h1 @Html.EditAttributes(m => m.Heading)>
-    @(Model.Heading ?? Model.Name)
+<h1 @Html.EditAttributes(m => m.CurrentPage.Heading)>
+    @(Model.CurrentPage.Heading ?? Model.CurrentPage.Name)
 </h1>
 
-@Html.PropertyFor(m => m.MainBody)
+@Html.PropertyFor(m => m.CurrentPage.MainBody)
