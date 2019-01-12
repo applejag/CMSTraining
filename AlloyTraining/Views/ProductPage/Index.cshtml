@@ -1,0 +1,40 @@
+﻿@using AlloyTraining.Models.Pages
+@using AlloyTraining.Models.ViewModels
+@model IPageViewModel<ProductPage>
+@{
+    Layout = "~/Views/Shared/Layouts/_RightRelatedContent.cshtml";
+}
+
+<h1 @Html.EditAttributes(m => m.CurrentPage.Name)>
+    @Html.DisplayFor(m => m.CurrentPage.Name)
+</h1>
+
+<p class="introduction" @Html.EditAttributes(m => m.CurrentPage.MetaDescription)>
+    @Html.DisplayFor(m => m.CurrentPage.MetaDescription)
+</p>
+
+<div class="row">
+    <div class="span8 clearfix">
+        @Html.PropertyFor(m => m.CurrentPage.MainBody)
+    </div>
+</div>
+
+@section RelatedContent
+{
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.PageImage)
+    </div>
+    <div class="block colorBox @Model.CurrentPage.Theme">
+        <h2 @Html.EditAttributes(m => m.CurrentPage.Name)>
+            @Html.DisplayFor(m => m.CurrentPage.Name)
+        </h2>
+        <p @Html.EditAttributes(m => m.CurrentPage.UniqueSellingPoints)>
+            @foreach (string usp in Model.CurrentPage.UniqueSellingPoints)
+            {
+                <span class="label label-inverse">
+                    @usp
+                </span>
+            }
+        </p>
+    </div>
+}
