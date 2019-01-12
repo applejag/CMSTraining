@@ -282,6 +282,7 @@
       <DependentUpon>EPiServerDB_0705f053.mdf</DependentUpon>
     </Content>
     <Content Include="ClientResources\Styles\help-text-icon.css" />
+    <Content Include="ClientResources\Styles\widen-editors.css" />
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Resources\LanguageFiles\MediaTypes.xml" />
