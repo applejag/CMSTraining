@@ -12,7 +12,7 @@ namespace AlloyTraining.Controllers
 
         public ActionResult Index(ProductPage currentPage)
         {
-            return View(currentPage);
+            return View(CreatePageViewModel(currentPage));
         }
     }
 }
