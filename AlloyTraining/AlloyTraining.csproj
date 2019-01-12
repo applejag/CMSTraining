@@ -281,6 +281,7 @@
     <Content Include="App_Data\EPiServerDB_0705f053_log.ldf">
       <DependentUpon>EPiServerDB_0705f053.mdf</DependentUpon>
     </Content>
+    <Content Include="ClientResources\Styles\help-text-icon.css" />
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Resources\LanguageFiles\MediaTypes.xml" />
@@ -341,6 +342,7 @@
     <Content Include="modules\_protected\Shell\Shell.zip" />
     <Content Include="modules\_protected\CMS\web.config" />
     <Content Include="modules\_protected\CMS\CMS.zip" />
+    <Content Include="module.config" />
     <None Include="packages.config" />
     <Content Include="Views\StartPage\Index.cshtml" />
     <Content Include="Views\Shared\Layouts\_Root.cshtml" />
