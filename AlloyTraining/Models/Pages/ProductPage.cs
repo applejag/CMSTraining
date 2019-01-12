@@ -15,7 +15,7 @@ namespace AlloyTraining.Models.Pages
         Description = "Use this for software products that Alloy sells.",
         GroupName = SiteGroupNames.Specialized)]
     [SiteCommerceIcon]
-    public class ProductPage : PageData
+    public class ProductPage : SitePageData
     {
         [SelectOne(SelectionFactoryType = typeof(ThemeSelectionFactory))]
         [Display(Name = "Color theme",
