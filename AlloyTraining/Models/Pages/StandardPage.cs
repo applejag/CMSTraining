@@ -12,6 +12,9 @@ namespace AlloyTraining.Models.Pages
         Description = "Use this page type unless you need a more specialized one.",
         GroupName = SiteGroupNames.Common)]
     [SitePageIcon]
+    [AvailableContentTypes(
+        Include = new[] { typeof(StandardPage) },
+        Exclude = new[] { typeof(ProductPage) })]
     public class StandardPage : SitePageData
     {
 
