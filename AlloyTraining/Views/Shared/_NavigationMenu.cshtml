@@ -1,0 +1,25 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Routing
+@model IPageViewModel<SitePageData>
+
+<ul>
+    <li>
+        @Html.ContentLink(ContentReference.StartPage)
+        <ul>
+            @foreach (SitePageData page in Model.MenuPages)
+            {
+                <li>@Html.ContentLink(page.ContentLink)</li>
+            }
+        </ul>
+    </li>
+    <li>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a href="@Url.Action(Model.StartPage.ContentLink, "Logout")">Log out @User.Identity.Name</a>
+        }
+        else
+        {
+            <a href="@FormsAuthentication.LoginUrl?ReturnUrl=@Url.Encode(Model.CurrentPage.PageLink.ExternalURLFromReference())">Log in</a>
+        }
+    </li>
+</ul>
