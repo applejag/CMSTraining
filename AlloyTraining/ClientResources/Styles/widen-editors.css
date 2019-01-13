@@ -3,9 +3,17 @@
 /* Affects: string, int, double, DateTime, ContentReference, CategoryList */
 .Sleek .dijitTextBox {
     width: 500px !important;
+    padding: 1px !important;
+    margin: 0;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 /* Affects: ContentArea */
 .Sleek .epi-content-area-editor {
     width: 550px !important;
+    padding: 1px !important;
+    margin: 0;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
