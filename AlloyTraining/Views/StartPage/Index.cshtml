@@ -6,3 +6,6 @@
 </h1>
 
 @Html.PropertyFor(m => m.CurrentPage.MainBody)
+
+@Html.PropertyFor(m => m.CurrentPage.MainContentArea, 
+    new { @class = "row equal-height" })
