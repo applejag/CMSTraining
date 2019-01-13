@@ -1,5 +1,9 @@
 ﻿@model ContentFolderViewModel
 
-<h4>
-    @Html.DisplayFor(m => m.CurrentFolder.Name) folder contains @Model.ItemsCount items.
-</h4>
+<div class="block span12">
+    <h4>
+        <strong @Html.EditAttributes(m => m.CurrentFolder.Name)>
+            @Html.DisplayFor(m => m.CurrentFolder.Name)
+        </strong> folder contains @Model.ItemsCount items.
+    </h4>
+</div>
