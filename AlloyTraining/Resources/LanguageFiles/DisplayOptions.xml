@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="English" id="en">
+    <displayoptions>
+      <full>Full</full>
+      <wide>Wide</wide>
+      <narrow>Narrow</narrow>
+    </displayoptions>
+  </language>
+  <language name="Svenska" id="sv">
+    <displayoptions>
+      <full>Heltäckande</full>
+      <wide>Bred</wide>
+      <narrow>Smal</narrow>
+    </displayoptions>
+  </language>
+</languages>

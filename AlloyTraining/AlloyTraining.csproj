@@ -248,6 +248,7 @@
     <Compile Include="Business\ExtensionMethods\MiscExtensions.cs" />
     <Compile Include="Business\ExtensionMethods\SectionExtensionMethods.cs" />
     <Compile Include="Business\ExtensionMethods\UrlHelperExtensions.cs" />
+    <Compile Include="Business\Initialization\DisplayOptionsInitializationModule.cs" />
     <Compile Include="Business\Initialization\RegisterAdminInitializationModule.cs" />
     <Compile Include="Business\Initialization\RegisterDependencyResolverInitializationModule.cs" />
     <Compile Include="Business\SelectionFactories\ThemeSelectionFactory.cs" />
@@ -290,6 +291,7 @@
     <Content Include="ClientResources\Styles\widen-editors.css" />
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
+    <Content Include="Resources\LanguageFiles\DisplayOptions.xml" />
     <Content Include="Resources\LanguageFiles\MediaTypes.xml" />
     <Content Include="Resources\LanguageFiles\ContentTypes.xml" />
     <Content Include="Static\contenticons\epi-edu-icon-block.jpg" />
