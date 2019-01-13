@@ -1,0 +1,14 @@
+﻿@model PageViewModel<SitePageData>
+
+<div class="block span8" style="background-color: lavenderblush;">
+    <div class="border">
+        <a href="@Url.ContentUrl(Model.CurrentPage.ContentLink)">
+            <div @Html.EditAttributes(m => m.CurrentPage.PageImage)>
+                @Html.DisplayFor(m => m.CurrentPage.PageImage)
+            </div>
+            <h2 @Html.EditAttributes(m => m.CurrentPage.Name)>
+                @Html.DisplayFor(m => m.CurrentPage.Name)
+            </h2>
+        </a>
+    </div>
+</div>

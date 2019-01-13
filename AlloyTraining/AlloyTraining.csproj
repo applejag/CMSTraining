@@ -253,6 +253,7 @@
     <Compile Include="Business\SelectionFactories\ThemeSelectionFactory.cs" />
     <Compile Include="Controllers\ContentFolderController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
+    <Compile Include="Controllers\AllPagesPartialController.cs" />
     <Compile Include="Controllers\ProductPagePartialController.cs" />
     <Compile Include="Controllers\ProductPageController.cs" />
     <Compile Include="Controllers\StandardPageController.cs" />
@@ -274,6 +275,7 @@
     <Compile Include="SiteContentIcons.cs" />
     <Compile Include="SiteGroupNames.cs" />
     <Compile Include="SiteTabNames.cs" />
+    <Compile Include="SiteTags.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Blocks\" />
@@ -358,6 +360,9 @@
     <Content Include="Views\ProductPagePartial\Index.cshtml" />
     <Content Include="Views\Shared\ImageFile.cshtml" />
     <Content Include="Views\ContentFolder\Index.cshtml" />
+    <Content Include="Views\Shared\Full.cshtml" />
+    <Content Include="Views\Shared\Narrow.cshtml" />
+    <Content Include="Views\Shared\Wide.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
