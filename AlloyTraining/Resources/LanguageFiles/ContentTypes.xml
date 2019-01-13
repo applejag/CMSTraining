@@ -64,6 +64,10 @@
             <caption>Kroppen av huvud</caption>
             <help>Huvudkroppen kommer att visas i huvudinnehållet på sidan med hjälp av XHTML-redigeraren som du kan infoga tex, bilder och tabeller.</help>
           </mainbody>
+          <maincontentarea>
+            <caption>Huvudinnehållsyta</caption>
+            <help>Huvudkroppen med innehåll från andra grejjor. Såsom förhandsvisningar på andra sidor, mappar, bilder etc.</help>
+          </maincontentarea>
         </properties>
       </startpage>
     </contenttypes>
