@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using AlloyTraining.Models.Blocks;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
@@ -25,6 +26,12 @@ namespace AlloyTraining.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 150)]
         public virtual XhtmlString MainBody { get; set; }
+
+        [Display(Name = "Page author",
+            Description = "The employee who created this page. Drag in an employee block from the Assets menu.",
+            GroupName = SystemTabNames.Content,
+            Order = 160)]
+        public virtual EmployeeBlock Author { get; set; }
 
     }
 }
