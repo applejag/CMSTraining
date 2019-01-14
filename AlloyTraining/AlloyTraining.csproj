@@ -301,6 +301,7 @@
     <Content Include="ClientResources\Styles\widen-editors.css" />
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
+    <Content Include="Resources\LanguageFiles\BlockTypes.xml" />
     <Content Include="Resources\LanguageFiles\DisplayChannels.xml" />
     <Content Include="Resources\LanguageFiles\DisplayOptions.xml" />
     <Content Include="Resources\LanguageFiles\MediaTypes.xml" />

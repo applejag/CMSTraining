@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="English" id="en">
+    <contenttypes>
+      <employeeblock>
+        <properties>
+          <firstname>
+            <caption>First name</caption>
+          </firstname>
+          <lastname>
+            <caption>Last name</caption>
+          </lastname>
+          <hiredate>
+            <caption>Hire date</caption>
+          </hiredate>
+        </properties>
+      </employeeblock>
+    </contenttypes>
+  </language>
+  <language name="Svenska" id="sv">
+    <contenttypes>
+      <employeeblock>
+        <properties>
+          <firstname>
+            <caption>Förnamn</caption>
+          </firstname>
+          <lastname>
+            <caption>Efternamn</caption>
+          </lastname>
+          <hiredate>
+            <caption>Anställningsdatum</caption>
+          </hiredate>
+        </properties>
+      </employeeblock>
+    </contenttypes>
+  </language>
+</languages>

@@ -32,6 +32,15 @@
           </mainbody>
         </properties>
       </startpage>
+
+      <standardpage>
+        <properties>
+          <author>
+            <caption>Page author</caption>
+            <help>The employee who created this page.</help>
+          </author>
+        </properties>
+      </standardpage>
     </contenttypes>
   </language>
   <language name="Svenska" id="sv">
@@ -70,6 +79,15 @@
           </maincontentarea>
         </properties>
       </startpage>
+
+      <standardpage>
+        <properties>
+          <author>
+            <caption>Skribent</caption>
+            <help>Information om den anställda som skapat denna sida.</help>
+          </author>
+        </properties>
+      </standardpage>
     </contenttypes>
   </language>
 </languages>
