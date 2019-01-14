@@ -30,6 +30,18 @@ namespace AlloyTraining.Models.Pages
             Order = 320)]
         public virtual IList<string> UniqueSellingPoints { get; set; }
 
+        [Display(Name = "Main content area",
+            Description = "Drag and drop pages and content with partial themes.",
+            GroupName = SystemTabNames.Content,
+            Order = 330)]
+        public virtual ContentArea MainContentArea { get; set; }
+
+        [Display(Name = "Related content area",
+            Description = "Drag and drop pages and content with partial themes.",
+            GroupName = SystemTabNames.Content,
+            Order = 340)]
+        public virtual ContentArea RelatedContentArea { get; set; }
+
         public override void SetDefaultValues(ContentType contentType)
         {
             base.SetDefaultValues(contentType);

@@ -1,5 +1,4 @@
-﻿@using AlloyTraining.Models.Pages
-@using AlloyTraining.Models.ViewModels
+﻿@using AlloyTraining
 @model IPageViewModel<ProductPage>
 @{
     Layout = "~/Views/Shared/Layouts/_RightRelatedContent.cshtml";
@@ -19,6 +18,9 @@
     </div>
 </div>
 
+@Html.PropertyFor(m => m.CurrentPage.MainContentArea, 
+    new { CssStyle = "row equal-height", Tag = SiteTags.Wide })
+
 @section RelatedContent
 {
     <div>
@@ -37,4 +39,7 @@
             }
         </p>
     </div>
+    
+    @Html.PropertyFor(m => m.CurrentPage.RelatedContentArea, 
+        new { CssStyle = "row equal-height", Tag = SiteTags.Narrow })
 }
