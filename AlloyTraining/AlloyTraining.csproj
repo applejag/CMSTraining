@@ -376,6 +376,8 @@
     <Content Include="Views\StartPageMobile\Index.cshtml" />
     <Content Include="Views\Shared\EditorialBlock.cshtml" />
     <Content Include="Views\TeaserBlock\Index.cshtml" />
+    <Content Include="Views\TeaserBlockNarrow\Index.cshtml" />
+    <Content Include="Views\TeaserBlockWide\Index.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
