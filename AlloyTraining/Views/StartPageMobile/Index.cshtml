@@ -1,4 +1,5 @@
 ﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc
 @model IPageViewModel<AlloyTraining.Models.Pages.StartPage>
 
 <h1 @Html.EditAttributes(m => m.CurrentPage.Heading)>
@@ -7,7 +8,8 @@
 
 @Html.PropertyFor(m => m.CurrentPage.MainBody)
 
-<ul>
+@Html.FullRefreshPropertiesMetaData(new[] { "MainContentArea" })
+<ul @Html.EditAttributes(m => m.CurrentPage.MainContentArea)>
     @foreach (ContentAreaItem item in Model.CurrentPage.MainContentArea.FilteredItems)
     {
         <li>@Html.ContentLink(item.ContentLink)</li>
