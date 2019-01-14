@@ -289,6 +289,8 @@
     <Content Include="App_Data\EPiServerDB_0705f053_log.ldf">
       <DependentUpon>EPiServerDB_0705f053.mdf</DependentUpon>
     </Content>
+    <Content Include="ClientResources\iPhone4\device-320x480.png" />
+    <Content Include="ClientResources\iPhone4\iPhone4.css" />
     <Content Include="ClientResources\Styles\help-text-icon.css" />
     <Content Include="ClientResources\Styles\widen-editors.css" />
     <Content Include="IndexingService\IndexingService.svc" />
