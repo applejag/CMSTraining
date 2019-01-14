@@ -13,19 +13,26 @@ namespace AlloyTraining.Models.Blocks
     [SiteBlockIcon]
     public class TeaserBlock : BlockData
     {
-        [Display(Name = "Teaser heading", Order = 10)]
+        [Display(Name = "Heading",
+            GroupName = SystemTabNames.PageHeader,
+            Order = 10)]
         [CultureSpecific]
         public virtual string TeaserHeading { get; set; }
 
-        [Display(Name = "Teaser text", Order = 20)]
+        [Display(Name = "Rich text",
+            Order = 20)]
         [CultureSpecific]
         public virtual XhtmlString TeaserText { get; set; }
 
-        [Display(Name = "Teaser thumbnail image", Order = 30)]
+        [Display(Name = "Thumbnail image",
+            GroupName = SystemTabNames.PageHeader,
+            Order = 30)]
         [UIHint(UIHint.Image)]
         public virtual ContentReference TeaserImage { get; set; }
 
-        [Display(Name = "Teaser page link", Order = 40)]
+        [Display(Name = "Link",
+            GroupName = SystemTabNames.PageHeader,
+            Order = 40)]
         public virtual PageReference TeaserLink { get; set; }
     }
 }
