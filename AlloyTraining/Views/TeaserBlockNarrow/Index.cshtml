@@ -6,8 +6,8 @@
             <h2 @Html.EditAttributes(m => m.CurrentBlock.TeaserHeading)>
                 @Html.DisplayFor(m => m.CurrentBlock.TeaserHeading)
             </h2>
-            <p @Html.EditAttributes(m => m.CurrentBlock.TeaserText)>
-                @Html.DisplayFor(m => m.CurrentBlock.TeaserText)
+            <p>
+                @Html.PropertyFor(m => m.CurrentBlock.TeaserText)
             </p>
             <small>
                 There has been @Model.TodayVisitorCount.ToString("N0") visitors today.
