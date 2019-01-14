@@ -45,7 +45,7 @@ namespace AlloyTraining.Models.Pages
         public override void SetDefaultValues(ContentType contentType)
         {
             base.SetDefaultValues(contentType);
-
+            
             Theme = "theme1";
         }
     }

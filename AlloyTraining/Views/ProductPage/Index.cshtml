@@ -18,8 +18,8 @@
     </div>
 </div>
 
-@Html.PropertyFor(m => m.CurrentPage.MainContentArea, 
-    new { CssStyle = "row equal-height", Tag = SiteTags.Wide })
+@Html.PropertyFor(m => m.CurrentPage.MainContentArea,
+    new { CssClass = "row equal-height", Tag = SiteTags.Wide })
 
 @section RelatedContent
 {
@@ -39,7 +39,7 @@
             }
         </p>
     </div>
-    
-    @Html.PropertyFor(m => m.CurrentPage.RelatedContentArea, 
-        new { CssStyle = "row equal-height", Tag = SiteTags.Narrow })
+
+    @Html.PropertyFor(m => m.CurrentPage.RelatedContentArea,
+        new { CssClass = "row equal-height", Tag = SiteTags.Narrow })
 }
