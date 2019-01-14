@@ -1,0 +1,16 @@
+﻿@model EmployeeBlock
+
+<div class="block span">
+    <span @Html.EditAttributes(m => m.FirstName)>
+        @Html.DisplayFor(m => m.FirstName)
+    </span>
+    <span @Html.EditAttributes(m => m.LastName)>
+        @Html.DisplayFor(m => m.LastName)
+    </span>
+    <i @Html.EditAttributes(m => m.HireDate)>
+        @if (Model.HireDate.HasValue)
+        {
+            <text>was hired on @Model.HireDate.Value.ToString("dddd, d MMMM yyyy")</text>
+        }
+    </i>
+</div>
