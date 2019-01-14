@@ -19,7 +19,7 @@ namespace AlloyTraining.Controllers
             var model = new TeaserBlockViewModel
             {
                 CurrentBlock = currentBlock,
-                TodayVisitorCount = new Random().Next(300, 900)
+                TodayVisitorCount = new Random().Next(900, 10900)
             };
 
             return PartialView(model);
