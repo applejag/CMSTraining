@@ -17,6 +17,11 @@
     @Html.DisplayFor(m => m.Heading)
 </h2>
 
+@if (!Model.Pages.Any())
+{
+    <div class="label label-warning">The page selected has no children.</div>
+}
+
 @foreach (PageData page in Model.Pages)
 {
     <div class="listResult theme1">

@@ -10,6 +10,7 @@ namespace AlloyTraining.Models.Blocks
         GroupName = SiteGroupNames.Common,
         GUID = "f298a01e-5de1-4fb3-8d6d-9ff9d3deee44",
         Description = "Choose a page in the tree, and its children will be listed, with a heading.")]
+    [SiteBlockIcon]
     public class ListingBlock : BlockData
     {
         [Display(Name = "Heading", Order = 10)]
