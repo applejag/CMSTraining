@@ -17,14 +17,5 @@ namespace AlloyTraining.Models.Blocks
 
         [Display(Name = "Show children of this page", Order = 20)]
         public virtual PageReference ShowChildrenOfThisPage { get; set; }
-        /*
-                [CultureSpecific]
-                [Display(
-                    Name = "Name",
-                    Description = "Name field's description",
-                    GroupName = SystemTabNames.Content,
-                    Order = 1)]
-                public virtual string Name { get; set; }
-         */
     }
 }

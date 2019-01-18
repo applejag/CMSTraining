@@ -1,0 +1,36 @@
+﻿@using EPiServer.Core
+@model ListingBlockViewModel
+
+@if (Model.Pages == null)
+{
+    if (EPiServer.Editor.PageEditing.PageIsInEditMode)
+    {
+        <div class="label label-warning">
+            <p>Set the ShowChildrenOfThisPage property to a page.</p>
+            <small>(This is only visible in the editor.)</small>
+        </div>
+    }
+    return;
+}
+
+<h2 @Html.EditAttributes(m => m.Heading)>
+    @Html.DisplayFor(m => m.Heading)
+</h2>
+
+@foreach (PageData page in Model.Pages)
+{
+    <div class="listResult theme1">
+        <h3>@Html.ContentLink(page.ContentLink)</h3>
+        @if (page.StartPublish.HasValue)
+        {
+            <p class="date">
+                Published on @page.StartPublish.Value.ToString("dddd, d MMMM yyyy")
+            </p>
+        }
+        @if (page.Property["MainBody"] != null)
+        {
+            @Html.Raw(page.Property["MainBody"].Value)
+        }
+        <hr/>
+    </div>
+}

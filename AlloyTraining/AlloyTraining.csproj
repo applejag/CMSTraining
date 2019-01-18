@@ -254,6 +254,7 @@
     <Compile Include="Business\Initialization\RegisterDependencyResolverInitializationModule.cs" />
     <Compile Include="Business\SelectionFactories\ThemeSelectionFactory.cs" />
     <Compile Include="Controllers\ContentFolderController.cs" />
+    <Compile Include="Controllers\ListingBlockController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
     <Compile Include="Controllers\AllPagesPartialController.cs" />
     <Compile Include="Controllers\PreviewPageController.cs" />
@@ -279,6 +280,7 @@
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\ViewModels\ContentFolderViewModel.cs" />
     <Compile Include="Models\ViewModels\IPageViewModel.cs" />
+    <Compile Include="Models\ViewModels\ListingBlockViewModel.cs" />
     <Compile Include="Models\ViewModels\PageViewModel.cs" />
     <Compile Include="Models\ViewModels\PreviewPageViewModel.cs" />
     <Compile Include="Models\ViewModels\TeaserBlockViewModel.cs" />
@@ -385,6 +387,7 @@
     <Content Include="Views\TeaserBlockWide\Index.cshtml" />
     <Content Include="Views\PreviewPage\Index.cshtml" />
     <Content Include="Views\Shared\EmployeeBlock.cshtml" />
+    <Content Include="Views\ListingBlock\Index.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
