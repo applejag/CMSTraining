@@ -28,11 +28,12 @@ Source: https://nuget.episerver.com/feed/packages.svc/
 
 > _`Name` does not have to be exact._
 
-After cloning the repository your modules/ folder is empty (for either AlloyTraining or AlloyDemo)
-then open the `Package Manager Console` and execute the following command to reinstall the packages:
+If after cloning the repository your modules/ folder is empty (for either AlloyTraining or AlloyDemo)
+then open the `Package Manager Console`, **make sure Package source is set to All** _(in the console)_ and execute the following command to reinstall the packages:
 
 ```
-Update-Package -reinstall
+Update-Package -Reinstall -ProjectName AlloyDemo
+Update-Package -Reinstall -ProjectName AlloyTraining
 ```
 
 > _The Zip files in the modules folder is added during installation via script and is skipped upon regular NuGet restore._
