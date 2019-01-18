@@ -1,0 +1,20 @@
+﻿@model IPageViewModel<NewsLandingPage>
+
+@{
+    Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml";
+}
+
+<h1 @Html.EditAttributes(m => m.CurrentPage.MetaTitle)>
+    @(Model.CurrentPage.MetaTitle ?? Model.CurrentPage.Name)
+</h1>
+
+<p class="introduction" @Html.EditAttributes(m => m.CurrentPage.MetaDescription)>
+    @Html.DisplayFor(m => m.CurrentPage.MetaDescription)
+</p>
+
+<div class="row">
+    <div class="span8">
+        @Html.PropertyFor(m => m.CurrentPage.MainBody)
+        @Html.PropertyFor(m => m.CurrentPage.NewsListing)
+    </div>
+</div>
