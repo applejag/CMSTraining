@@ -7,7 +7,7 @@ namespace AlloyTraining.Business.ExtensionMethods
 {
     public static class SectionExtensionMethods
     {
-        // Gets the top level page of the section this page is in. Used to build our submenu.
+        /// <summary>Gets the top level page of the section this page is in. Used to build our submenu.</summary>
         public static IContent GetSection(this ContentReference contentLink)
         {
             var loader = ServiceLocator.Current.GetInstance<IContentLoader>();
