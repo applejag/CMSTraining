@@ -2,24 +2,47 @@
 @using EPiServer.Web.Routing
 @model IPageViewModel<SitePageData>
 
-<ul>
-    <li>
-        @Html.ContentLink(ContentReference.StartPage)
-        <ul>
-            @foreach (SitePageData page in Model.MenuPages)
-            {
-                <li>@Html.ContentLink(page.ContentLink)</li>
-            }
-        </ul>
+@helper ActiveClass(PageReference page)
+{
+    @(Model.CurrentPage.PageLink.CompareToIgnoreWorkID(page) ? "active" : null)
+}
+
+@helper MenuItem(MenuItem item)
+{
+    <li class="@ActiveClass(item.Page.PageLink)">
+        @Html.PageLink(item.Page)
     </li>
-    <li>
-        @if (User.Identity.IsAuthenticated)
-        {
-            <a href="@Url.Action(Model.StartPage.ContentLink, "Logout")">Log out @User.Identity.Name</a>
-        }
-        else
-        {
-            <a href="@FormsAuthentication.LoginUrl?ReturnUrl=@Url.Encode(Model.CurrentPage.PageLink.ExternalURLFromReference())">Log in</a>
-        }
-    </li>
-</ul>
+}
+
+<div class="alloyMenu">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="@ActiveClass(ContentReference.StartPage)">
+                            @Html.PageLink(ContentReference.StartPage)
+                        </li>
+                        @Html.MenuList(ContentReference.StartPage, MenuItem)
+                        <li>
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a href="@Url.Action(ContentReference.StartPage, "Logout")">Log out @User.Identity.Name</a>
+                            }
+                            else
+                            {
+                                <a href="@FormsAuthentication.LoginUrl?ReturnUrl=@Url.Encode(Model.CurrentPage.PageLink.ExternalURLFromReference())">Log in</a>
+                            }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
