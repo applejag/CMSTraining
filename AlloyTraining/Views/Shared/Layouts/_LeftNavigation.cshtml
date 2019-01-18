@@ -5,6 +5,7 @@
 
 <div class="row">
     <div class="span4">
+        @Html.Partial("_LeftNavigationMenu", Model)
         @RenderSection("_LeftNavigationMenu", required: false)
     </div>
     <div class="span8">

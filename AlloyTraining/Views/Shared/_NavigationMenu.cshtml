@@ -9,7 +9,7 @@
 
 @helper MenuItem(MenuItem item)
 {
-    <li class="@ActiveClass(item.Page.PageLink)">
+    <li class="@(item.Selected ? "active" : null)">
         @Html.PageLink(item.Page)
     </li>
 }
