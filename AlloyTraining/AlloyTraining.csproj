@@ -395,6 +395,7 @@
     <Content Include="Views\ListingBlock\Index.cshtml" />
     <Content Include="Views\NewsLandingPage\Index.cshtml" />
     <Content Include="Views\Shared\_LeftNavigationMenu.cshtml" />
+    <Content Include="Views\SearchPage\Index.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

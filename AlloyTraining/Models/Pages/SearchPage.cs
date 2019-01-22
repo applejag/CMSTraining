@@ -8,7 +8,7 @@ namespace AlloyTraining.Models.Pages
         GUID = "044d7070-a9fa-4efb-822a-882435a29a09",
         Description = "Use this to enable visitors to search for pages and media on the site.")]
     [SitePageIcon]
-    public class SearchPage : SitePageData
+    public class SearchPage : StandardPage
     {
     }
 }
